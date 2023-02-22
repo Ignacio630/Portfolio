@@ -1,0 +1,48 @@
+*{
+    background-color: #2C3E50;
+    color: #3795BD;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*
+    Primary color = 2C3E50
+    Secondary color = 3A1078
+    Tertiary color = 4E31AA
+    Quaternary color = 2F58CD
+    Quinary color = 3795BD
+*/
+.nav-bar{
+    background-color: #3795BD;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: right;
+}
+.nav-list{
+    background-color: #3795BD;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    background-color: #3795BD;
+    padding: 10px;
+}
+.nav-item a{
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #3795BD;
+    border-radius: 5px;
+}
+.nav-item a:hover{
+    color: #4E31AA;
+}

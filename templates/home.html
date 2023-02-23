@@ -1,24 +1,10 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}Inicio{% endblock %}</title>
-        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
-    </head>
-<body>
-    <nav class="nav-bar">
-        <div class="nav-list">
-            <div class="nav-item"><a href="{% url 'home' %}">Inicio</a></div>
-            <div class="nav-item"><a href="#">Proyectos</a></div>
-            <div class="nav-item"><a href="#">Acerca de mi</a></div>
-            <div class="nav-item"><a href="#">Contacto</a></div>
-        </div>
-    </nav>
-    <h1>{{title}}</h1>
-    {% block content %}{% endblock %}
-    <script src="{% static '/js/main.js' %}"></script>
-</body> 
-</html>
+{% extends 'layouts/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="hero-container">
+        <h1 class="hero-title">Web & software developer</h1>
+        <p class="hero-paragrahp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea possimus nostrum corporis voluptatem similique, magnam id tempore earum natus? Soluta pariatur adipisci consequuntur laborum, sed eligendi quam quidem atque odio.</p>
+    </div>
+{% endblock %}

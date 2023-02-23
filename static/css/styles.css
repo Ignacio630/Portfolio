@@ -3,6 +3,7 @@
     color: #3795BD;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 
@@ -28,6 +29,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    
 }
 .nav-item{
     background-color: #3795BD;
@@ -37,12 +39,35 @@
     color: black;
     border: 1px solid black;
     text-decoration: none;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 2px;
     background-color: #3795BD;
     border-radius: 5px;
 }
 .nav-item a:hover{
     color: #4E31AA;
+}
+
+/*HERO*/
+.hero-container{
+    height: 700px;
+    text-align: center;
+    padding: 10px;
+    background-image: url('/static/media/hero.png');
+    background-size: cover;
+}
+.hero-title{
+    font-size: 50px;
+    padding: 10px;
+    margin: 50px 10px;
+    background: fixed;
+    color: #fff;
+}
+
+.hero-paragrahp{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    background: fixed;
+    color: #fff;
 }

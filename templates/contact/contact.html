@@ -5,12 +5,11 @@
 
 {% block content %}
 
-<div class="container">
-    <form method="POST" class="contact-form">
-        {% csrf_token %}
-        {{form}}
-        <input type="submit" value="Enviar">
-    </form>
-</div>
+
+<form method="POST" class="contact-form">
+    {% csrf_token %}
+    {{form}}
+    <input class="nav-item" type="submit" value="Enviar" id="btn-submit-contact">
+</form>
 
 {% endblock %}

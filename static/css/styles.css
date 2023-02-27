@@ -3,17 +3,18 @@
     color: #3795BD;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
-
 /*
     Primary color = 2C3E50
     Secondary color = 3A1078
     Tertiary color = 4E31AA
     Quaternary color = 2F58CD
     Quinary color = 3795BD
+    #9500ff (morado intenso)
+#f6c90e (amarillo brillante)
+#2d2d2d (negro)
+#ffffff (blanco)
 */
 .nav-bar{
     background-color: #3795BD;
@@ -32,25 +33,39 @@
     
 }
 .nav-item{
-    background-color: #3795BD;
-    padding: 10px;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0 5px;
 }
 .nav-item a{
-    color: black;
-    border: 1px solid black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 2px;
-    background-color: #3795BD;
-    border-radius: 5px;
+    background-color: #111;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: .3s;
+
 }
-.nav-item a:hover{
-    color: #4E31AA;
+.nav-item:hover a{
+    background: none;
+    text-decoration: none;
+}
+.nav-item:active{
+    transform: scale(0.9);
 }
 
 /*HERO*/
 .hero-container{
-    height: 700px;
+    height: 800px;
     text-align: center;
     padding: 10px;
     background-image: url('/static/media/hero.png');
@@ -61,7 +76,10 @@
     padding: 10px;
     margin: 50px 10px;
     background: fixed;
+    background-color: rgba(10, 13, 13, 0.4);
+    border-radius: 10px;
     color: #fff;
+    
 }
 
 .hero-paragrahp{
@@ -69,5 +87,7 @@
     padding: 10px;
     margin: 10px;
     background: fixed;
+    background-color: rgba(10, 13, 13, 0.4);
+    border-radius: 10px;
     color: #fff;
 }

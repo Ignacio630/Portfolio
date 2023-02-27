@@ -14,14 +14,20 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <div class="nav-list">
-            <div class="nav-item"><a href="{% url 'home' %}">Inicio</a></div>
-            <div class="nav-item"><a href="#">Proyectos</a></div>
-            <div class="nav-item"><a href="#">Acerca de mi</a></div>
-            <div class="nav-item"><a href="{% url 'contact' %}">Contacto</a></div>
+    <header class="nav-bar-container">
+        <div class="nav-logo">
+            <a href="{% url 'home' %}"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-hexagon" viewBox="0 0 16 16">
+                <path d="M14 4.577v6.846L8 15l-6-3.577V4.577L8 1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/></svg></a>
         </div>
-    </nav>
+        <nav class="nav-bar">
+            <ol class="nav-list">
+                <li class="nav-item"><a href="{% url 'home' %}" id="homePage">Inicio</a></li>
+                <li class="nav-item"><a href="#" id="proyects">Proyectos</a></li>
+                <li class="nav-item"><a href="#" id="aboutMe">Acerca de mi</a></li>
+                <li class="nav-item"><a href="{% url 'contact' %}" id="contact">Contacto</a></li>
+            </ol>
+        </nav>
+    </header>
     {% block content %}{% endblock %}
     <script src="{% static '/js/main.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
